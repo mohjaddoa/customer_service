@@ -15,6 +15,8 @@ using_text = cleaning()
 extractor = Extraction()
 extractor.download_spacy_model()
 # Initialize OpenAI Chat Model and Memory
+llm = ChatOpenAI(temperature=0, openai_api_key="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")
+
 memory = ConversationBufferMemory()
 
 
